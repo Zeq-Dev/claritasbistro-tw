@@ -1,0 +1,44 @@
+html {
+    overflow-x: hidden;
+}
+
+.head-cover {
+    width: 100vw;
+    height: 100vh;
+    background-position: 0% 35%;
+    background-size: cover;
+}
+
+nav li {
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+
+nav li:hover {
+    color: #C20300;
+}
+
+#gradient #sec1 {
+    margin-left: 10%;
+}
+
+#menu {
+    left: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu.is-active {
+    left: 0%;
+}
+
+@media screen and (min-width: 640px) {
+    #gradient #sec2 {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .head-cover {
+        background-position: 35% 35%;
+    }
+}

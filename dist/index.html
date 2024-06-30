@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="script.js" defer></script>
+    <title>Clarita's Bistro</title>
+</head>
+<body>
+    <nav id="desktop-nav" class="bg-opacity-100 z-0 absolute pt-3">
+        <div class="w-screen h-16 flex items-center justify-between pl-8 pr-8 md:pl-0 md:pr-0 md:justify-around">
+            <a href="" class="">
+                <img src="/img/logo.jpg" alt="logo" class="w-12 rounded-full">
+            </a>
+            <svg onclick="menuOpen()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-white md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>   
+            <ul class="hidden md:flex font-montserrat font-medium text-white w-1/3 items-center justify-between text-xl">
+                <li>About Us</li>
+                <li>Events</li>
+                <li>Menu</li>
+            </ul>
+        </div>
+        <!-- <div class="border-b border-secondary"></div> -->
+    </nav>
+    <div id="menu" class="fixed top-0 w-full h-full bg-primary pl-8 pr-8 pt-7 z-10">
+        <div id="top" class="flex justify-between">
+            <h1 class="text-xl font-montserrat">Clarita's Bistro</h1>
+            <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" onclick="menuOpen()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>  
+        </div>
+    </div>
+    <div class="">
+        <div id="head" class="h-screen w-screen">
+            <div class="bg-[url('/img/head-cover.jpeg')] w-full head-cover">
+                <div id="gradient" class="justify-center bg-gradient-to-bl from-black/[.60] w-full h-full flex">
+                    <div id="sec1" class="w-1/2 h-full hidden sm:inline-block"></div>
+                    <div id="sec2" class="w-3/4 sm:w-1/2 h-full flex items-center sm:items-end justify-center flex-col gap-4">
+                        <h1 class="text-white font-poetsen text-4xl text-center sm:text-end sm:text-4xl xl:text-6xl">
+                            The House of Islanders' Favorite Sisig and Pasta
+                        </h1>
+                        <div id="order-btn" class="w-44 h-12 text-third bg-secondary rounded-full flex items-center justify-center font-poetsen text-xl cursor-pointer transition-all hover:opacity-50 select-none">ORDER NOW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="best" class="h-screen w-screen bg-slate-50">
+
+        </div>
+    </div>
+</body>
+</html>
